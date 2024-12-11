@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;/*apenas teste*/
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #625E55;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+form button:hover {
+    background: #625E55;
+}
+
+footer {
+    background: #625E55;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+
+.navbar {
+    background-color: #625E55;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.navbar img{
+    height: 166px;
+    width: 268px;
+    text-align: center;
+}
+
+.navbar h1 {
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 1rem;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*testando linha do tempo*/
+.linhadotempo {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 10px;
+}
+.linhadotempo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #6c757d;
+}
+.linhadotempo-item {
+    display: flex;
+    margin-bottom: 30px;
+    position: relative;
+}
+.linhadotempo-item:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.linhadotempo-item-content {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 15px;
+    position: relative;
+    width: calc(50% - 20px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.linhadotempo-item-content::after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: #6c757d;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px #ffffff;
+}
+.linhadotempo-item:nth-child(odd) .linhadotempo-item-content::after {
+    right: -10px;
+}
+.linhadotempo-item:nth-child(even) .linhadotempo-item-content::after {
+    left: -10px;
+}
+.linhadotempo-item h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333333;
+}
+.linhadotempo-item p {
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+.linhadotempo-item time {
+    display: block;
+    font-size: 12px;
+    color: #888888;
+    margin-top: 5px;
+}
+.linhadotempo-item img {
+    display: grid;
+    width: 370px;
+    height: 250px;
+    gap: 20px;
+    object-fit: cover;
+    margin: 0 20px;
+}
+.linhadotempo-item:nth-child(odd) img {
+    margin-left: 0;
+    margin-right: 20px;
+}
+.linhadotempo-item:nth-child(even) img {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+/*não sei se da para fazer de outro modo*/
